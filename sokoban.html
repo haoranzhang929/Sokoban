@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sokoban!</title>
+        <script src="sokoban_maps.js" defer></script>
+        <script src="sokoban.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="sokoban.css" />
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="main-title">
+                <a href="sokoban.html"><h1>Sokoban!</h1></a>
+            </div>
+            <nav>
+                <select id="select-box" onchange="getVal()">
+                    <option>Select Level</option>
+                    <option value=0>Tutorial</option>
+                    <option value=1>Level 1</option>
+                    <option value=2>Level 2</option>
+                    <option value=3>Level 3</option>
+                </select>
+                <button onclick="play()">Start</button>
+            </nav>
+        </header>
+        <div id="instruction">
+            <br/><br/>
+            <h3>Welcome to Sokoban!</h3>
+            <br/>
+            <p>Let's push some boxes</p>
+            <p>Select level</p>
+            <p>Click Start to play</p>
+            <p>Use arrow keys to control</p>
+            <br/>
+            <br/>
+            <h2>Have fun! :)</h2>
+        </div>
+        <div id="moves">
+
+        </div>
+        <section>
+            <div id="play-field">
+                <table id="sokoban-table"></table>
+            </div>
+        </section>
+        <footer>
+            <small>&copy; 2017 Haoran Zhang</small>
+        </footer>
+    </body>
+</html>
